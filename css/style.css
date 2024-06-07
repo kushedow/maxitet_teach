@@ -34,36 +34,6 @@ td, th {
     border: 5px solid black;
 }
 
-p {
-    padding: 10px 0px 0px 10px;
-}
-
-.img__csharp {
-    position: auto;
-    padding: 20px 0px 0px 20px;
-    max-width: 800px;
-    max-height: 400px;
-}
-
-.river {
-    padding-left: 20%;
-    padding-top: 3%;
-    max-width: 400px;
-    max-height: 400px;
-}
-
-.url {
-    font-size: 20px;
-}
-
-[class*="language-"] {
-    margin-bottom: 40px;
-    background-color: rgba(212, 206, 206, 0.842);
-    border-radius: 10px;
-    border: 3px solid orange;
-    max-width: 800px;
-    min-height: 200px;
-}
 
 ul {
     padding-left: 5%;
@@ -72,6 +42,43 @@ ul {
 li {
     padding-top: 10px;
 }
+
+p {
+    padding: 10px 0 0 10px;
+}
+
+input {
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px 0 0 20px;
+}
+
+.url {
+    font-size: 20px;
+}
+
+section.language {
+    margin-bottom: 40px;
+    background-color: rgba(212, 206, 206, 0.842);
+    border-radius: 10px;
+    border: 3px solid orange;
+    max-width: 800px;
+    min-height: 200px;
+}
+
 
 .popup {
     position: fixed;
@@ -136,11 +143,22 @@ li {
 
 .popup__title {
     font-size: 40px;
-    margin: 0px 0px 1em 0px;
+    margin: 0 0 1em 0;
 }
-.popup__text {}
 
-input {
-    border-radius: 5px;
-    min-width: 200px;
+
+.popup__input-block {
+    margin: 10px 0;
+}
+
+.popup__input-block span {
+    display: block
+}
+
+.popup__input-block input  {
+   padding: 10px;
+}
+
+.popup__button {
+    padding: 10px;
 }
